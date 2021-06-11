@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddTaskVC" customModule="TestCloud" customModuleProvider="target">
+            <connections>
+                <outlet property="tftDesc" destination="cAW-mS-Sbi" id="JY8-Yf-xwl"/>
+                <outlet property="tftName" destination="7oU-SB-r6Q" id="MU4-yW-rcH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Task" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Z7-JC-Aa1">
+                    <rect key="frame" x="160" y="44" width="94" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="s7F-0U-Ksd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ro2-vO-LIT">
+                    <rect key="frame" x="10" y="44" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ro2-vO-LIT" secondAttribute="height" multiplier="1:1" id="0rn-0j-zYF"/>
+                    </constraints>
+                    <state key="normal" image="chevron.left" catalog="system"/>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="HFM-RA-PHX"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name Task" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7oU-SB-r6Q">
+                    <rect key="frame" x="10" y="114" width="394" height="45"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Desc Task" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cAW-mS-Sbi">
+                    <rect key="frame" x="10" y="169" width="394" height="179"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFB-Tq-dTP">
+                    <rect key="frame" x="107" y="368" width="200" height="50"/>
+                    <color key="backgroundColor" name="AccentColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="5US-YY-BYB"/>
+                        <constraint firstAttribute="width" secondItem="FFB-Tq-dTP" secondAttribute="height" multiplier="4:1" id="w6R-t0-yGp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="Add">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="addTask:" destination="-1" eventType="touchUpInside" id="9in-Zk-jHV"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="cAW-mS-Sbi" firstAttribute="top" secondItem="7oU-SB-r6Q" secondAttribute="bottom" constant="10" id="3wB-OO-LkH"/>
+                <constraint firstItem="cAW-mS-Sbi" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.2" id="5P0-zb-6bY"/>
+                <constraint firstItem="ro2-vO-LIT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="FLg-jw-wy9"/>
+                <constraint firstItem="7oU-SB-r6Q" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.05" id="GUR-sA-pVB"/>
+                <constraint firstItem="ro2-vO-LIT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="Gel-cM-pzf"/>
+                <constraint firstItem="FFB-Tq-dTP" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="LCb-l8-RIc"/>
+                <constraint firstItem="7oU-SB-r6Q" firstAttribute="top" secondItem="ro2-vO-LIT" secondAttribute="bottom" constant="20" id="Oh8-b9-bhA"/>
+                <constraint firstItem="1Z7-JC-Aa1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="XI1-4j-F76"/>
+                <constraint firstItem="FFB-Tq-dTP" firstAttribute="top" secondItem="cAW-mS-Sbi" secondAttribute="bottom" constant="20" id="ZNy-2U-yGV"/>
+                <constraint firstItem="7oU-SB-r6Q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="a3S-L7-qlj"/>
+                <constraint firstItem="1Z7-JC-Aa1" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="dWb-I0-BOy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cAW-mS-Sbi" secondAttribute="trailing" constant="10" id="j2u-7G-lPz"/>
+                <constraint firstItem="ro2-vO-LIT" firstAttribute="height" secondItem="1Z7-JC-Aa1" secondAttribute="height" id="kov-to-Ofr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7oU-SB-r6Q" secondAttribute="trailing" constant="10" id="lLt-Wo-INR"/>
+                <constraint firstItem="cAW-mS-Sbi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="zYP-yi-D9P"/>
+            </constraints>
+            <point key="canvasLocation" x="44.927536231884062" y="114.50892857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

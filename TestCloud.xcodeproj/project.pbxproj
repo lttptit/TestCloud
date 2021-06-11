@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5BBB8F2FC92B6724903D5206 /* Pods_TestCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A40823012FE52B824CB0485 /* Pods_TestCloud.framework */; };
 		D74AF90A267325AE00BCF812 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74AF909267325AE00BCF812 /* AppDelegate.swift */; };
 		D74AF90C267325AE00BCF812 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74AF90B267325AE00BCF812 /* SceneDelegate.swift */; };
 		D74AF90E267325AE00BCF812 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74AF90D267325AE00BCF812 /* ViewController.swift */; };
@@ -14,9 +15,16 @@
 		D74AF914267325AE00BCF812 /* TestCloud.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D74AF912267325AE00BCF812 /* TestCloud.xcdatamodeld */; };
 		D74AF916267325AE00BCF812 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D74AF915267325AE00BCF812 /* Assets.xcassets */; };
 		D74AF919267325AE00BCF812 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D74AF917267325AE00BCF812 /* LaunchScreen.storyboard */; };
+		D750152B2673435A002068BB /* AddTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75015292673435A002068BB /* AddTaskVC.swift */; };
+		D750152C2673435A002068BB /* AddTaskVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D750152A2673435A002068BB /* AddTaskVC.xib */; };
+		D750152F26734376002068BB /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D750152D26734376002068BB /* TaskCell.swift */; };
+		D750153026734376002068BB /* TaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D750152E26734376002068BB /* TaskCell.xib */; };
+		D750153326734656002068BB /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = D750153226734656002068BB /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A40823012FE52B824CB0485 /* Pods_TestCloud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestCloud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B972D5AEA5D1CEF1EB8607C1 /* Pods-TestCloud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCloud.debug.xcconfig"; path = "Target Support Files/Pods-TestCloud/Pods-TestCloud.debug.xcconfig"; sourceTree = "<group>"; };
 		D74AF906267325AE00BCF812 /* TestCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D74AF909267325AE00BCF812 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D74AF90B267325AE00BCF812 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +34,12 @@
 		D74AF915267325AE00BCF812 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D74AF918267325AE00BCF812 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D74AF91A267325AE00BCF812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D75015292673435A002068BB /* AddTaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskVC.swift; sourceTree = "<group>"; };
+		D750152A2673435A002068BB /* AddTaskVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddTaskVC.xib; sourceTree = "<group>"; };
+		D750152D26734376002068BB /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		D750152E26734376002068BB /* TaskCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskCell.xib; sourceTree = "<group>"; };
+		D750153226734656002068BB /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		E53A9F35FA329F724B1ED227 /* Pods-TestCloud.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCloud.release.xcconfig"; path = "Target Support Files/Pods-TestCloud/Pods-TestCloud.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +47,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BBB8F2FC92B6724903D5206 /* Pods_TestCloud.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		087C2C1445E6B551D1DEB721 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A40823012FE52B824CB0485 /* Pods_TestCloud.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8083746E8D32996C631BA233 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B972D5AEA5D1CEF1EB8607C1 /* Pods-TestCloud.debug.xcconfig */,
+				E53A9F35FA329F724B1ED227 /* Pods-TestCloud.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D74AF8FD267325AE00BCF812 = {
 			isa = PBXGroup;
 			children = (
 				D74AF908267325AE00BCF812 /* TestCloud */,
 				D74AF907267325AE00BCF812 /* Products */,
+				8083746E8D32996C631BA233 /* Pods */,
+				087C2C1445E6B551D1DEB721 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +92,45 @@
 		D74AF908267325AE00BCF812 /* TestCloud */ = {
 			isa = PBXGroup;
 			children = (
+				D75015312673464B002068BB /* Helper */,
+				D750152826734345002068BB /* ViewController */,
+				D75015272673433B002068BB /* Cell */,
 				D74AF909267325AE00BCF812 /* AppDelegate.swift */,
 				D74AF90B267325AE00BCF812 /* SceneDelegate.swift */,
-				D74AF90D267325AE00BCF812 /* ViewController.swift */,
-				D74AF90F267325AE00BCF812 /* Main.storyboard */,
 				D74AF915267325AE00BCF812 /* Assets.xcassets */,
 				D74AF917267325AE00BCF812 /* LaunchScreen.storyboard */,
 				D74AF91A267325AE00BCF812 /* Info.plist */,
 				D74AF912267325AE00BCF812 /* TestCloud.xcdatamodeld */,
 			);
 			path = TestCloud;
+			sourceTree = "<group>";
+		};
+		D75015272673433B002068BB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D750152D26734376002068BB /* TaskCell.swift */,
+				D750152E26734376002068BB /* TaskCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		D750152826734345002068BB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D74AF90D267325AE00BCF812 /* ViewController.swift */,
+				D74AF90F267325AE00BCF812 /* Main.storyboard */,
+				D75015292673435A002068BB /* AddTaskVC.swift */,
+				D750152A2673435A002068BB /* AddTaskVC.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D75015312673464B002068BB /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				D750153226734656002068BB /* Task.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +140,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D74AF91D267325AE00BCF812 /* Build configuration list for PBXNativeTarget "TestCloud" */;
 			buildPhases = (
+				D2F6D37DD89226D729059CAF /* [CP] Check Pods Manifest.lock */,
 				D74AF902267325AE00BCF812 /* Sources */,
 				D74AF903267325AE00BCF812 /* Frameworks */,
 				D74AF904267325AE00BCF812 /* Resources */,
@@ -128,12 +192,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				D74AF919267325AE00BCF812 /* LaunchScreen.storyboard in Resources */,
+				D750153026734376002068BB /* TaskCell.xib in Resources */,
 				D74AF916267325AE00BCF812 /* Assets.xcassets in Resources */,
 				D74AF911267325AE00BCF812 /* Main.storyboard in Resources */,
+				D750152C2673435A002068BB /* AddTaskVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D2F6D37DD89226D729059CAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestCloud-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D74AF902267325AE00BCF812 /* Sources */ = {
@@ -142,7 +233,10 @@
 			files = (
 				D74AF90E267325AE00BCF812 /* ViewController.swift in Sources */,
 				D74AF914267325AE00BCF812 /* TestCloud.xcdatamodeld in Sources */,
+				D750152B2673435A002068BB /* AddTaskVC.swift in Sources */,
 				D74AF90A267325AE00BCF812 /* AppDelegate.swift in Sources */,
+				D750152F26734376002068BB /* TaskCell.swift in Sources */,
+				D750153326734656002068BB /* Task.swift in Sources */,
 				D74AF90C267325AE00BCF812 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +381,7 @@
 		};
 		D74AF91E267325AE00BCF812 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B972D5AEA5D1CEF1EB8607C1 /* Pods-TestCloud.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +401,7 @@
 		};
 		D74AF91F267325AE00BCF812 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E53A9F35FA329F724B1ED227 /* Pods-TestCloud.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
